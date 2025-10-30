@@ -5,20 +5,30 @@
         </div>
 
         <div class="card-body">
+            <!--:style-->
+            <button class="btn btn-success my-3" @click="estado1 = !estado1">Cambiar color fondo</button>
+            <p :style="{ backgroundColor: estado1 ? 'blueviolet' : 'red', color: 'aliceblue', padding: '10px', borderRadius: '10px' }">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolorum sit, reprehenderit vel quae optio doloribus totam esse quasi maxime quibusdam nesciunt sint sapiente rem aliquam impedit facilis voluptatibus fugit?</p>
 
+            <br />
+             <!--:class-->
+            <button class="btn btn-success my-3" @click="estado2 = !estado2">Cambiar color fondo</button>
+            <!--<p :class="{ btn:true, 'btn-success': estado2, 'btn-danger': !estado2 }"-->
+            <p :class="[`btn`, {'btn-success': estado2, 'btn-danger': !estado2}]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolorum sit, reprehenderit vel quae optio doloribus totam esse quasi maxime quibusdam nesciunt sint sapiente rem aliquam impedit facilis voluptatibus fugit?</p>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-	name: 'Binding',
+	name: 'Atributos',
 	props: {
 		// ejemplo: value: { type: [String, Number], default: '' }
 	},
 	data() {
 		return {
-			// estado local
+			estado1: true,
+            estado2:true
+           
 		}
 	},
 	watch: {

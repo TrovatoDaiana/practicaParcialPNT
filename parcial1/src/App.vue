@@ -9,10 +9,12 @@
 
       <div class="card-body">
         <main>
-          <Binding />
+          <Navbar />
+          <RouterView />
+          <!-- <Binding />
           <Estructura />
           <Atributos />
-          <Formulario />
+          <Formulario /> -->
         </main>
       </div>
 
@@ -22,19 +24,21 @@
 
 <script>
 /* Importo componentes de archivo simple */
-import Binding from './components/Binding.vue';
+import Navbar from './components/Navbar.vue';
+/* import Binding from './components/Binding.vue';
 import Estructura from './components/Estructura.vue';
 import Atributos from './components/Atributos.vue';
 /*Importo componente Formulario de multiples archivos */
-import Formulario from './components/Formulario/index.vue';
+/*import Formulario from './components/Formulario/index.vue'; */
 
 export default {
 	name: 'App',
   components: {
-		Binding,
+    Navbar,
+		/* Binding,
 		Estructura,
 		Atributos,
-    Formulario
+    Formulario */
 	},
 	
 }

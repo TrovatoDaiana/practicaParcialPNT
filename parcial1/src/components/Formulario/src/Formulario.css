@@ -2,3 +2,7 @@
   background-color: #cface7; 
   color: aliceblue; 
 }
+label{
+  text-transform: capitalize;
+  margin-top: 15px;
+}
