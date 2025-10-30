@@ -1,0 +1,5 @@
+.respuestas .table input.form-control {
+  min-width: 120px;
+}
+.respuestas .card-header h5 { font-size: 1rem; }
+.respuestas .text-danger.small { font-size: 0.8rem; }

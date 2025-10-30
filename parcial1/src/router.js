@@ -5,6 +5,7 @@ import Estructura from './components/Estructura.vue'
 import Atributos from './components/Atributos.vue'
 import Formulario from './components/Formulario/index.vue'
 import Contadores from './components/contadores.vue'
+import Respuestas from './components/Respuestas/index.vue'
 
 const routes = [
     //ruta raiz por defecto
@@ -15,6 +16,7 @@ const routes = [
   { path: '/atributos', component: Atributos },
   { path: '/formulario', component: Formulario },
   { path: '/contadores', component: Contadores },
+  { path: '/respuestas', component: Respuestas },
   //rutas no definidas o existentes
   { path: '/:pathMatch(.*)*', redirect: '/binding' }
 ]
